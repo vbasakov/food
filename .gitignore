@@ -48,3 +48,10 @@ Thumbs.db
 *.mov
 *.wmv
 
+logs/*
+!.gitkeep
+node_modules/
+app/lib/
+tmp
+.DS_Store
+.idea
