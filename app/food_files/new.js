@@ -2807,9 +2807,9 @@ $("#1RMbtn").click(calc1PM);
 
 
 window.onload = function() {
-    calc1PM();
-    bringPMTable();
-    insertPlugsToTableTitle()
+    // calc1PM();
+    // bringPMTable();
+    // insertPlugsToTableTitle()
 };
 
 

@@ -2352,33 +2352,7 @@
 
 <script type="text/javascript">
     window.vkAsyncInit = function () {
-        VK.Observer.subscribe('widgets.comments.new_comment', function (num, last_comment, date, sign) {
-            var data = {
-                action: 'darx.comments',
-                provider: 'vk',
-                job: 'add',
-                id: document.getElementById("comments_post_id").value,
-                num: num,
-                last_comment: last_comment,
-                date: date,
-                sign: sign
-            };
-            darx.post('http://3-x-15.ru/wp-admin/admin-ajax.php', data);
-        });
 
-        VK.Observer.subscribe('widgets.comments.delete_comment', function (num, last_comment, date, sign) {
-            var data = {
-                action: 'darx.comments',
-                provider: 'vk',
-                job: 'remove',
-                id: document.getElementById("comments_post_id").value,
-                num: num,
-                last_comment: last_comment,
-                date: date,
-                sign: sign
-            };
-            darx.post('http://3-x-15.ru/wp-admin/admin-ajax.php', data);
-        });
     };
 </script>
 <style scoped="scoped">
@@ -2388,25 +2362,6 @@
 </style>
 <script>
     window.fbAsyncInit = function () {
-        FB.Event.subscribe('comment.create', function () {
-            var data = {
-                action: 'darx.comments',
-                provider: 'fb',
-                job: 'add',
-                id: document.getElementById("comments_post_id").value
-            };
-            darx.post('http://3-x-15.ru/wp-admin/admin-ajax.php', data);
-        });
-
-        FB.Event.subscribe('comment.remove', function () {
-            var data = {
-                action: 'darx.comments',
-                provider: 'fb',
-                job: 'remove',
-                id: document.getElementById("comments_post_id").value
-            };
-            darx.post('http://3-x-15.ru/wp-admin/admin-ajax.php', data);
-        });
     };
 </script>
 <script type="text/javascript">                (function (d) {
