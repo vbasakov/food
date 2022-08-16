@@ -2810,6 +2810,7 @@ window.onload = function() {
     // calc1PM();
     // bringPMTable();
     // insertPlugsToTableTitle()
+    calc()
 };
 
 
