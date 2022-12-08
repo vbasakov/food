@@ -150,10 +150,10 @@ jQuery(document).ready(function($) {
         if (remainKalories < 0) {
             remainKalories=742.0
         }
-        console.log("kPermass: " + kPermass)
-        console.log("fPermass: " + fPermass)
-        console.log("pPermass: " + pPermass)
-        console.log("remainKalories: " + remainKalories)
+        // console.log("kPermass: " + kPermass)
+        // console.log("fPermass: " + fPermass)
+        // console.log("pPermass: " + pPermass)
+        // console.log("remainKalories: " + remainKalories)
 
         var cPermass = 1*((remainKalories/4).toFixed(1));
 
@@ -229,6 +229,7 @@ $(".calc, #sex, .activity, #intensity, #fatSelect, #proteinSelect, .howFastli").
 
 function cutThisProperly(x){  // обрезает(не округляя) отправленное число до 2х цифр после запятой
 
+    // console.log(x)
     var digitFromButton = x.toFixed(4);
     var newY = digitFromButton.toString();
     var newX = newY;
@@ -704,7 +705,6 @@ if(goalProtein !==0 && goalFat !==0 && goalCarbs !==0 && goalKkal !==0) {
         var nameFloat = "";
         var x, y;
 
-
         if (difference == "high"){
             $(".concl" + nutrientName).addClass("available");
             ifNotCool = " concCool";
@@ -801,6 +801,21 @@ if(goalProtein !==0 && goalFat !==0 && goalCarbs !==0 && goalKkal !==0) {
             assembler("Kkal", "normal");
         }
     }
+
+
+
+    if (typeof highP === 'undefined') {
+        highP = 254.7
+    }
+
+    if (typeof lowP === 'undefined') {
+        lowP = 166.40
+    }
+
+    console.log("goalProtein: " + goalProtein)
+    console.log("tProtein: " + tProtein)
+    console.log("highP: " + highP)
+    console.log("lowP: " + lowP)
 
     if(tProtein>0 && goalProtein>0) {
         if(highP < tProtein){
