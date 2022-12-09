@@ -1381,9 +1381,12 @@ var aktimel = new food("Актимель", 100, "мл.", 2.8, 2.6, 11.5, 81);
 var hohTr = new food("Сыр Хохланд 1 треугольник", 1, "шт.", 1.92, 4.9, 0.87, 55.3);
 var hohLom = new food("Сыр Хохланд 1 ломтик", 1, "шт.", 2.62, 4.31, 0.75, 52.31);
 var cottageCheese_gr = new food("Творог зерненый", 100, "гр.", 11, 4.3, 3.4, 98);
+var savushkin_0 = new food("Савушкин мягкий 0%", 100, "гр.", 10, 0.1, 1, 44.9);
+var savushkin_5 = new food("Савушкин мягкий 5%", 100, "гр.", 8.5, 5, 1.6, 85.4);
+var village_cottage_5 = new food("Домик в деревне мягкий 5%", 100, "гр.", 8.5, 5.5, 3.5, 98);
 var cottageCheese_0 = new food("Творог 0%", 100, "гр.", 18, 0, 3.3, 85);
-var cottageCheese_2 = new food("Творог 2%", 100, "гр.", 18, 2, 3.3, 103);
-var cottageCheese_5 = new food("Творог 5%", 100, "гр.", 17.2, 5, 1.8, 121);
+var cottageCheese_2 = new food("Творог 2%", 100, "гр.", 17, 2, 3.3, 99);
+var cottageCheese_5 = new food("Творог 5%", 100, "гр.", 16, 5, 3, 117);
 var cottageCheese_9 = new food("Творог 9%", 100, "гр.", 16.7, 9, 2.0, 159);
 var smetana10 = new food("Сметана 10%", 1, "ст.л.", 0.75, 2.5, 0.72, 28.75);
 var smetana15 = new food("Сметана 15%", 1, "ст.л.", 0.65, 3.75, 0.75, 39.5);
@@ -1822,8 +1825,12 @@ var greatArray = new Array(
 
     butter_72, butter_82, lamber, chedder, adygCheese, yog25, yog04,
     russianCheese, buckweat, milk_05, milk_15, milk_25, milk_32, aktimel,
-    kefir0, kefir1, kefir15, kefir25, kefir32,   yogurtFlav, snegok,
-    cottageCheese_0, cottageCheese_2, cottageCheese_5, slivki10, ryaghenka25, ryaghenka32, ryaghenka4,
+    kefir0, kefir1, kefir15, kefir25, kefir32,   yogurtFlav, snegok, cottageCheese_0,
+    savushkin_0,
+    savushkin_5,
+    village_cottage_5,
+    cottageCheese_2, cottageCheese_5,
+    slivki10, ryaghenka25, ryaghenka32, ryaghenka4,
     slivki20, slivki33, cottageCheese_9, hohTr, hohLom, smetana10, almetTvor, hohlTvor,
     smetana15, smetana20, smetana25, smetana30, suluguni, cottageCheese_gr, parmezan, mozzarella,
     gelatin,
