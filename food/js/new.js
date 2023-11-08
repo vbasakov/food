@@ -11,7 +11,7 @@
  * https://github.com/lokesh/lightbox2/blob/master/LICENSE
  */
     !function (a, b) {
-        "function" == typeof define && define.amd ? define(["jquery"], b) : "object" == typeof exports ? module.exports = b(require("jquery")) : a.lightbox = b(a.jQuery)
+        "function" == typeof define && define.amd ? define(["food/food_files/jquery"], b) : "object" == typeof exports ? module.exports = b(require("food/food_files/jquery")) : a.lightbox = b(a.jQuery)
     }(this, function (a) {
         function b(b) {
             this.album = [], this.currentImageIndex = void 0, this.init(), this.options = a.extend({}, this.constructor.defaults), this.option(b)
@@ -2692,7 +2692,7 @@ jQuery(document).ready(function ($) {
 * Copyright jQuery Foundation and other contributors; Licensed MIT */
 
     (function (e) {
-        "function" == typeof define && define.amd ? define(["jquery"], e) : e(jQuery)
+        "function" == typeof define && define.amd ? define(["food/food_files/jquery"], e) : e(jQuery)
     })(function (e) {
         function t(t, s) {
             var n, a, o, r = t.nodeName.toLowerCase();
