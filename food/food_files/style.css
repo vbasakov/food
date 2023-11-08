@@ -164,7 +164,7 @@ select {
 /*=-=-=-=-=-=-=-=-=-=-=-=-=- START OF HEADER -=-=-=-=-=-=-=-=-=-=-=-=-=-*/
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-=-=-*/
 header {
-    background-image: url("img/debut_dark.png");
+    background-image: url("../images/debut_dark.png");
     left: 0;
 }
 .logo {
@@ -1613,7 +1613,7 @@ div#vk_groups {
     height: 25px;
 }
 .site-footer {
-    background-image: url("img/debut_dark.png");
+    background-image: url("../images/debut_dark.png");
     box-shadow: inset 0px 4px 10px rgba(0,0,0,1);
     /*position: absolute;*/
     position: absolute;
@@ -2335,7 +2335,7 @@ ul.contents {
     background: url(../backgrounds/1105Big2.jpg);
 }
 .artcal2 {
-    background: url(http://3-x-15.ru/wp-content/uploads/2017/06/IMG_20170602_195113.jpg);
+    background: url(../backgrounds/IMG_20170602_195113.jpg);
 }
 .artcal3 {
     background: url('../backgrounds/борщ.jpg');
