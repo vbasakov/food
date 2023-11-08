@@ -1067,7 +1067,7 @@ display: none;
     margin-bottom: 30px;
 }
 .conclusionDiv div {
-    background-image: url(//3-x-15.ru/wp-content/themes/my_new_theme/img/green_plug.png);
+    background-image: url(../backgrounds/green_plug.png);
     background-size: 100% 100%;
     display: inline-block;
     width: 15%;
@@ -2332,27 +2332,27 @@ ul.contents {
     background: url(http://3-x-15.ru/wp-content/uploads/2018/03/Безымянный.jpg);
 }
 .artcal1 {
-    background: url(http://3-x-15.ru/wp-content/uploads/2017/05/1105Big2.jpg);
+    background: url(../backgrounds/1105Big2.jpg);
 }
 .artcal2 {
     background: url(http://3-x-15.ru/wp-content/uploads/2017/06/IMG_20170602_195113.jpg);
 }
 .artcal3 {
-    background: url(http://3-x-15.ru/wp-content/uploads/2018/03/борщ.jpg);
+    background: url('../backgrounds/борщ.jpg');
 }
 .artcal4 {
-    background: url(http://3-x-15.ru/wp-content/uploads/2017/06/MifflinStJeor.png);
+    background: url(../backgrounds/MifflinStJeor.png);
     width: auto;
 }
 .artmet1 {
-    background: url(http://3-x-15.ru/wp-content/uploads/2016/10/dimavsmarivanna2.png);
+    background: url(../backgrounds/dimavsmarivanna2.png);
     background-position: center;
 }
 .artmet2 {
-    background: url(http://3-x-15.ru/wp-content/uploads/2017/06/metabolism_grafic.png);
+    background: url(../backgrounds/metabolism_grafic.png);
 }
 .artmet3 {
-    background: url(http://3-x-15.ru/wp-content/uploads/2017/06/falloutmetabolism.jpg);
+    background: url(../backgrounds/falloutmetabolism.jpg);
 }
 .zachemIndividProg {
     background: url(http://3-x-15.ru/wp-content/uploads/2018/04/somatotypes5.jpg);
