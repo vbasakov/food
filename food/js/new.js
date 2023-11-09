@@ -1,13 +1,4 @@
 let mainFunc = function ($) {
-    console.log("Load was performed.");
-    console.log(greatArray[1]);
-    console.log("Load was performed.");
-
-    console.log(greatArray[1])
-    console.log(greatArray[1])
-    console.log(greatArray[1])
-    console.log(greatArray[1])
-    console.log(greatArray[1])
     // UP TO THE TOP BUTTON
     // browser window scroll (in pixels) after which the "back to top" link is shown
     var offset = 300,
