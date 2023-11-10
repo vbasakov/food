@@ -1947,11 +1947,24 @@ let mainFunc = function ($) {
     });
 };
 jQuery(document).ready(function ($) {
-
-    $.getScript("js/lightbox.js", function () {
-        $.getScript("js/products.js", function () {
-            mainFunc($)
-        });
-    });
-
+    function applyScripts(scripts, callback) {
+        if (scripts.length === 0) {
+            callback($)
+        } else {
+            let [head, ...tail] = scripts
+            jQuery.getScript(head, function() {
+                applyScripts(tail, callback)
+            })
+        }
+    }
+    applyScripts(
+        [
+            "js/lightbox.js",
+            "js/newUtil.js",
+            "js/preparedBluda.js",
+            "js/preparedSets.js",
+            "js/products.js"
+        ],
+        mainFunc
+    )
 });// end ofjQuery($)
