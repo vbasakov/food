@@ -1946,13 +1946,23 @@ let mainFunc = function ($) {
         preparedSet(set, title);
     });
 };
+
+let clickAll = function($) {
+    $(".calc").click()
+    $("#speed2").click()
+    $(".howFastli").mousedown().mouseup().click()
+    // ccalsForPreSet()
+    // calc()
+    $("span:contains('Супы')").click()
+    $(".harcho").click()
+}
 jQuery(document).ready(function ($) {
     function applyScripts(scripts, callback) {
         if (scripts.length === 0) {
-            callback($)
+            callback()
         } else {
-            let [head, ...tail] = scripts
-            jQuery.getScript(head, function() {
+            const [head, ...tail] = scripts
+            $.getScript(head, function() {
                 applyScripts(tail, callback)
             })
         }
@@ -1960,11 +1970,14 @@ jQuery(document).ready(function ($) {
     applyScripts(
         [
             "js/lightbox.js",
-            "js/newUtil.js",
-            "js/preparedBluda.js",
-            "js/preparedSets.js",
+           // "js/newUtil.js",
+           //  "js/preparedBluda.js",
+           //  "js/preparedSets.js",
             "js/products.js"
         ],
-        mainFunc
+        function() {
+            mainFunc($)
+            clickAll($)
+        }
     )
 });// end ofjQuery($)
