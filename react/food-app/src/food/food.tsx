@@ -32,18 +32,19 @@ export function Food() {
                                                                    className="gender"
                                                                    value="male"
                                                                    name="sex" id="male"
-                                                                   checked={true}>
-                                                                <span className="frame"
-                                                                      id="maleS">Мужчина</span>
-                                                            </input>
+                                                                   checked={true}/>
+                                                            <span className="frame"
+                                                                  id="maleS">Мужчина</span>
                                                         </label>
 
                                                         <label className="genderLabel" htmlFor="female">
-                                                            <input type="radio" className="gender" value="female"
+                                                            <input type="radio"
+                                                                   className="gender"
+                                                                   value="female"
                                                                    name="sex"
-                                                                   id="female"> <span className="frame"
-                                                                                      id="femaleS">Женщина</span>
-                                                            </input>
+                                                                   id="female"/>
+                                                            <span className="frame"
+                                                                  id="femaleS">Женщина</span>
                                                         </label>
 
                                                     </div>
@@ -59,12 +60,13 @@ export function Food() {
                                                         </div>
 
                                                         <div className="paramDivs">
-                                                            <span className="divTitle heightT">Рост</span><br/><input
-                                                            id="height"
-                                                            type="text"
-                                                            className="height frame"
-                                                            name="height"
-                                                            value="174"></input><br/>
+                                                            <span className="divTitle heightT">Рост</span><br/>
+                                                            <input
+                                                                id="height"
+                                                                type="text"
+                                                                className="height frame"
+                                                                name="height"
+                                                                value="174"/><br/>
                                                         </div>
 
                                                         <div className="paramDivs">
@@ -85,48 +87,57 @@ export function Food() {
                                                         <label className="inputLable" htmlFor="Sedentary">
                                                             <input id="Sedentary" className="activity" type="radio"
                                                                    name="activity"
-                                                                   value="1.2"/><span>Веду сидячий образ жизни</span>
+                                                                   value="1.2"/>
+                                                            <span>Веду сидячий образ жизни</span>
                                                         </label>
 
                                                         <label className="inputLable" htmlFor="v3">
                                                             <input id="v3" className="activity" type="radio"
                                                                    name="activity"
-                                                                   value="1.375" checked={true}/><span>Занимаюсь активными видами спорта не менее 30 мин 3 раза в неделю</span><br/>
+                                                                   value="1.375" checked={true}/>
+                                                            <span>Занимаюсь активными видами спорта не менее 30 мин 3 раза в неделю</span><br/>
                                                         </label>
 
                                                         <label className="inputLable" htmlFor="v4">
                                                             <input id="v4" className="activity" type="radio"
                                                                    name="activity"
-                                                                   value="1.418"/><span>4 раза в неделю</span><br/>
+                                                                   value="1.418"/>
+                                                            <span>4 раза в неделю</span><br/>
                                                         </label>
 
                                                         <label className="inputLable" htmlFor="v5">
                                                             <input id="v5" className="activity" type="radio"
                                                                    name="activity"
-                                                                   value="1.462"/><span>5 раз в неделю</span><br/>
+                                                                   value="1.462"/>
+                                                            <span>5 раз в неделю</span><br/>
                                                         </label>
 
                                                         <label className="inputLable" htmlFor="v6">
                                                             <input id="v6" className="activity" type="radio"
                                                                    name="activity"
-                                                                   value="1.506"/><span>6 раз в неделю</span><br/>
+                                                                   value="1.506"/>
+                                                            <span>6 раз в неделю</span><br/>
                                                         </label>
 
                                                         <label className="inputLable" htmlFor="v7">
                                                             <input id="v7" className="activity" type="radio"
                                                                    name="activity"
-                                                                   value="1.6375"/><span>Занимаюсь ежедневно</span><br/>
+                                                                   value="1.6375"/>
+                                                            <span>Занимаюсь ежедневно</span><br/>
                                                         </label>
 
                                                         <label className="inputLable" htmlFor="v7+">
-                                                            <input id="v7+" className="activity" type="radio"
+                                                            <input id="v7+"
+                                                                   className="activity"
+                                                                   type="radio"
                                                                    name="activity"
-                                                                   value="1.9"/><span>Я – работник тяжелого физического труда + занимаюсь ежедневно</span><br/>
+                                                                   value="1.9"/>
+                                                            <span>Я – работник тяжелого физического труда + занимаюсь ежедневно</span><br/>
                                                         </label>
-                                                        <input type="button" className="calc btn"
-                                                               value="Посчитать!"/><span
-                                                        className="fillThatForm">Нужно заполнить все поля</span>
-
+                                                        <input type="button"
+                                                               className="calc btn"
+                                                               value="Посчитать!"/>
+                                                        <span className="fillThatForm">Нужно заполнить все поля</span>
                                                     </div>
                                                 </div>
 
@@ -532,7 +543,7 @@ export function Food() {
 
                                             {/*todo*/}
                                             <div className="printButton btn"
-                                                 >onClick="javascript:window.print()" Распечатать
+                                            >onClick="javascript:window.print()" Распечатать
                                                 таблицу
                                             </div>
                                             <div className="clearButton btn">Очистить таблицу</div>
@@ -1538,18 +1549,18 @@ export function Food() {
                                 </div>
 
 
-                                <div class="gap"></div>
+                                <div className="gap"></div>
 
-                                <div class="articlesHolder">
+                                <div className="articlesHolder">
                                     <fieldset>
                                         <legend>Три статьи о том, как правильно считать калории:</legend>
-                                        <div class="article">
-                                            <div class="boxmain artcal1">
-                                                <div class="cover top">
-                                                    <h2 class="arttitle"><a
+                                        <div className="article">
+                                            <div className="boxmain artcal1">
+                                                <div className="cover top">
+                                                    <h2 className="arttitle"><a
                                                         href="http://3-x-15.ru/2017/05/15/calories-counter/"
                                                         target="_blank">1. Счетчик калорий.</a></h2>
-                                                    <a class="readmoar"
+                                                    <a className="readmoar"
                                                        href="http://3-x-15.ru/2017/05/15/calories-counter/"
                                                        target="_blank">Разбираемся,
                                                         как правильно использовать счетчик калорий. Подробно рассмотрим
@@ -1557,14 +1568,15 @@ export function Food() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="article">
-                                            <div class="boxmain artcal2">
-                                                <div class="cover top">
-                                                    <h2 class="arttitle"><a
+                                        <div className="article">
+                                            <div className="boxmain artcal2">
+                                                <div className="cover top">
+                                                    <h2 className="arttitle"><a
                                                         href="http://3-x-15.ru/2017/05/20/calories-2/"
                                                         target="_blank">2. Сырые продукты и прочие
                                                         “мелочи”.</a></h2>
-                                                    <a class="readmoar" href="http://3-x-15.ru/2017/05/20/calories-2/"
+                                                    <a className="readmoar"
+                                                       href="http://3-x-15.ru/2017/05/20/calories-2/"
                                                        target="_blank">Почему
                                                         считать калории нужно на вес продуктов до приготовления, а еще о
                                                         том,
@@ -1574,13 +1586,14 @@ export function Food() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="article">
-                                            <div class="boxmain artcal3">
-                                                <div class="cover top">
-                                                    <h2 class="arttitle"><a
+                                        <div className="article">
+                                            <div className="boxmain artcal3">
+                                                <div className="cover top">
+                                                    <h2 className="arttitle"><a
                                                         href="http://3-x-15.ru/2017/05/17/calories-3/"
                                                         target="_blank">3. Готовые блюда.</a></h2>
-                                                    <a class="readmoar" href="http://3-x-15.ru/2017/05/17/calories-3/"
+                                                    <a className="readmoar"
+                                                       href="http://3-x-15.ru/2017/05/17/calories-3/"
                                                        target="_blank">Объединяем
                                                         полученные в первых двух частях знания и пытаемся осуществить
                                                         невозможное: посчитать калории в готовом блюде на примере
@@ -1591,30 +1604,32 @@ export function Food() {
                                     </fieldset>
                                 </div>
 
-                                <div class="gap"></div>
+                                <div className="gap"></div>
 
-                                <div class="articlesHolder">
+                                <div className="articlesHolder">
                                     <fieldset>
                                         <legend>Подробное руководство по ускорению метаболизма:</legend>
-                                        <div class="article">
-                                            <div class="boxmain artmet1">
-                                                <div class="cover top">
-                                                    <h2 class="arttitle"><a
+                                        <div className="article">
+                                            <div className="boxmain artmet1">
+                                                <div className="cover top">
+                                                    <h2 className="arttitle"><a
                                                         href="http://3-x-15.ru/2016/10/19/metabolism-1/"
                                                         target="_blank">1. О чем речь вообще?</a></h2>
-                                                    <a class="readmoar" href="http://3-x-15.ru/2016/10/19/metabolism-1/"
+                                                    <a className="readmoar"
+                                                       href="http://3-x-15.ru/2016/10/19/metabolism-1/"
                                                        target="_blank">Статья объясняет понятие “метаболизм” на пальцах,
                                                         мимоходом поддавая пинка дробному питанию.</a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="article">
-                                            <div class="boxmain artmet2">
-                                                <div class="cover top">
-                                                    <h2 class="arttitle"><a
+                                        <div className="article">
+                                            <div className="boxmain artmet2">
+                                                <div className="cover top">
+                                                    <h2 className="arttitle"><a
                                                         href="http://3-x-15.ru/2016/10/20/metabolism-2/"
                                                         target="_blank">2. Сухая масса тела</a></h2>
-                                                    <a class="readmoar" href="http://3-x-15.ru/2016/10/20/metabolism-2/"
+                                                    <a className="readmoar"
+                                                       href="http://3-x-15.ru/2016/10/20/metabolism-2/"
                                                        target="_blank">С
                                                         помощью данных научных исследований и цветных картинок
                                                         рассматривается
@@ -1623,13 +1638,13 @@ export function Food() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="article">
-                                            <div class="boxmain artmet3">
-                                                <div class="cover top">
-                                                    <h2 class="arttitle"><a
+                                        <div className="article">
+                                            <div className="boxmain artmet3">
+                                                <div className="cover top">
+                                                    <h2 className="arttitle"><a
                                                         href="http://3-x-15.ru/2016/10/08/metabolic-boost-3-hiit-strength-training/"
                                                         target="_blank">3. EPOC, HIIT и силовые тренировки</a></h2>
-                                                    <a class="readmoar"
+                                                    <a className="readmoar"
                                                        href="http://3-x-15.ru/2016/10/08/metabolic-boost-3-hiit-strength-training/"
                                                        target="_blank">Простым
                                                         языком объясняю, как использовать интервальные тренировки и
@@ -1644,14 +1659,14 @@ export function Food() {
                             </div>
 
 
-                            <div class="gap"></div>
+                            <div className="gap"></div>
                         </main>
                     </div>
                 </div>
 
             </div>
 
-            <footer id="colophon" class="site-footer navbar-static-bottom" role="contentinfo">
+            <footer id="colophon" className="site-footer navbar-static-bottom" role="contentinfo">
             </footer>
 
         </div>
