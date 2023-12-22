@@ -1,0 +1,10 @@
+new.js?ver=20151109:222 Uncaught TypeError: Cannot read properties of undefined (reading '0')
+    at cutThisProperly (new.js?ver=20151109:222:19)
+    at addIt (new.js?ver=20151109:324:23)
+    at addFoodsByRequest (new.js?ver=20151109:345:5)
+    at HTMLButtonElement.<anonymous> (new.js?ver=20151109:418:5)
+    at HTMLBodyElement.dispatch (jquery.js?ver=1.12.4:3:12369)
+    at r.handle (jquery.js?ver=1.12.4:3:9088)
+
+
+
