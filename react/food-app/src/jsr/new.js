@@ -10,8 +10,9 @@ import {
 import {greatArray} from "./products";
 import {applyGotovueBluda} from "./preparedBluda";
 import {applyPreparedSets} from "./preparedSets";
+import {default as CookiesLib} from 'universal-cookie';
 
-let Cookies = window.Cookies
+let Cookies = new CookiesLib();
 
 export const mainFunc = function ($) {
     var counter = () => counterUtil($);
@@ -58,15 +59,15 @@ export const mainFunc = function ($) {
     if (typeof Cookies.get('age') !== 'undefined') {
         $('#age').val(Cookies.get('age'));
     }
-    ;
+
     if (typeof Cookies.get('weight') !== 'undefined') {
         $('#weight').val(Cookies.get('weight'));
     }
-    ;
+
     if (typeof Cookies.get('height') !== 'undefined') {
         $('#height').val(Cookies.get('height'));
     }
-    ;
+
     if (typeof Cookies.get('sex') !== 'undefined') {
         var thissex = Cookies.get('sex');
         $('#' + thissex).prop('checked', true);
@@ -86,12 +87,13 @@ export const mainFunc = function ($) {
             purpose = $("input[type='radio'][name='speed']:checked").val();
         var checkResult = $(".tdee_ex_int").text();
 
-        Cookies.set('age', age, {expires: 90});
-        Cookies.set('height', height, {expires: 90});
-        Cookies.set('weight', weight, {expires: 90});
-        Cookies.set('sex', sex, {expires: 90});
+        let expiresOpts = {expires: (new Date(2025,12))};
+        Cookies.set('age', age, expiresOpts);
+        Cookies.set('height', height, expiresOpts);
+        Cookies.set('weight', weight, expiresOpts);
+        Cookies.set('sex', sex, expiresOpts);
         var activityId = $("input[type='radio'][name='activity']:checked").attr('id');
-        Cookies.set('activity', activityId, {expires: 90});
+        Cookies.set('activity', activityId, expiresOpts);
 
         var bmr = 10 * weight + 6.25 * height - 5 * age, tdee_ex, tdee_ex_int;
 
@@ -649,11 +651,14 @@ export const mainFunc = function ($) {
 
 // jquery.ui plugin at work
     $(function () {
-        $("#sortable").sortable();
-        $("#sortable").disableSelection();
-        $("#sortable").sortable({
-            revert: 50   // speed with wich #sortable li moving in free space, when you drop it
-        });
+        // import  'jqueryui';
+// import  'jqueryui';
+// import 'jquery-ui/themes/base/theme.css';
+//         $("#sortable").sortable();
+//         $("#sortable").disableSelection();
+//         $("#sortable").sortable({
+//             revert: 50   // speed with wich #sortable li moving in free space, when you drop it
+//         });
     });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -798,18 +803,22 @@ export const mainFunc = function ($) {
 
     applyGotovueBluda($);
     applyPreparedSets($);
+
+    function clickAll($) {
+        console.log("clickAll()")
+        $(".calc").click()
+        $("#speed2").click()
+        $(".howFastli").mousedown().mouseup().click()
+        // ccalsForPreSet()
+        // calc()
+        $(".foodPanel").has("span:contains('Супы')").click()
+        $("span:contains('Супы')").click()
+        $(".harcho").click()
+    }
+    clickAll($)
 };
 
-let clickAll = function ($) {
-    $(".calc").click()
-    $("#speed2").click()
-    $(".howFastli").mousedown().mouseup().click()
-    // ccalsForPreSet()
-    // calc()
-    $(".foodPanel").has("span:contains('Супы')").click()
-    $("span:contains('Супы')").click()
-    $(".harcho").click()
-}
+
 // jQuery(document).ready(function ($) {
 //     function applyScripts(scripts, callback) {
 //         if (scripts.length === 0) {
