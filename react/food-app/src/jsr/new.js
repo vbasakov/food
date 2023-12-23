@@ -805,8 +805,9 @@ export const mainFunc = function ($) {
     applyPreparedSets($);
 
     function clickAll($) {
+        //todo rewrite on React
         console.log("clickAll()")
-        $(".calc").click()
+       $(".calc").click()
         $("#speed2").click()
         $(".howFastli").mousedown().mouseup().click()
         // ccalsForPreSet()

@@ -309,9 +309,9 @@ export function compaireUtil($){
         // function assembler is making conclutions with different text and colors
         // it called by comparing goal nutrient amount and actual one (find it below)
         function assembler(nutrientName, difference) {
-
-            this.nutrientName = nutrientName;
-            this.difference = difference;
+            //todo maybe reason of wrong calculation
+            // this.nutrientName = nutrientName;
+            // this.difference = difference;
 
             var classToChange;
             var ifNotCool = "";
